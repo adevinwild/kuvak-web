@@ -4,7 +4,7 @@ import { useSettingsStore } from "../../../../stores/settings-store";
 export default function ScaleOption() {
   const { scale, setScale } = useSettingsStore();
   return (
-    <div className="grid gap-1.5 w-full">
+    <div id="scale-option" className="grid gap-1.5 w-full">
       <span className="text-sm font-medium text-gray-800">Scale</span>
       <div className="h-6 flex items-center justify-center">
         <Slider

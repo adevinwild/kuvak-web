@@ -5,6 +5,7 @@ exports[`Toolbar Toolbar - should render without issues 1`] = `
   <div
     class="z-10 rounded-lg shadow-border h-24 p-4 gap-4 flex items-center justify-between right-0 top-0 bg-white dark:bg-gray-900"
     data-testid="toolbar"
+    id="toolbar"
   >
     <div
       class="grid gap-1.5 w-full"
@@ -46,6 +47,7 @@ exports[`Toolbar Toolbar - should render without issues 1`] = `
     </div>
     <div
       class="grid gap-1.5 w-full"
+      id="scale-option"
     >
       <span
         class="text-sm font-medium text-gray-800"
@@ -100,6 +102,7 @@ exports[`Toolbar Toolbar - should render without issues 1`] = `
     </div>
     <div
       class="grid gap-1.5 w-full"
+      id="padding-option"
     >
       <span
         class="text-sm font-medium text-gray-800"
@@ -154,6 +157,7 @@ exports[`Toolbar Toolbar - should render without issues 1`] = `
     </div>
     <div
       class="grid gap-1.5 w-full"
+      id="roundness-option"
     >
       <span
         class="text-sm font-medium text-gray-800"
@@ -212,6 +216,7 @@ exports[`Toolbar Toolbar - should render without issues 1`] = `
     <button
       class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-gray-950 dark:focus-visible:ring-gray-300 text-gray-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 h-9 rounded-md px-3 bg-emerald-400 hover:bg-emerald-500"
       data-testid="export-button"
+      id="export-button"
     >
       <span>
         Export

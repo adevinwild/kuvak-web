@@ -4,7 +4,7 @@ import { useSettingsStore } from "../../../../stores/settings-store";
 export default function RoundnessOption() {
   const { roundness, setRoundness } = useSettingsStore();
   return (
-    <div className="grid gap-1.5 w-full">
+    <div id="roundness-option" className="grid gap-1.5 w-full">
       <span className="text-sm font-medium text-gray-800">Roundness</span>
       <div className="h-6 flex items-center justify-center">
         <Slider

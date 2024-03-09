@@ -22,8 +22,6 @@ export default function useExportNode(ref: RefObject<HTMLDivElement> | null) {
       link.href = dataUrl;
       link.click();
       setStatus("success");
-      resetImageUploaded();
-      reset();
     } catch (error: unknown) {
       console.error("oops, something went wrong!", error);
       setStatus("error");
@@ -36,7 +34,9 @@ export default function useExportNode(ref: RefObject<HTMLDivElement> | null) {
 
       const timer = setTimeout(() => {
         setStatus("idle");
-      }, 3250);
+        resetImageUploaded();
+        reset();
+      }, 2500);
       return () => clearTimeout(timer);
     },
     [status]
