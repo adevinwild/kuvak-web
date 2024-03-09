@@ -4,7 +4,7 @@ before('Clear downloads folder', () => {
 
 describe('template spec', () => {
   it('allows a user to upload a picture, update screenshot options, and export', () => {
-    cy.visit('http://localhost:5173/')
+    cy.visit('https://kuvak-web-git-staging-adils-projects-e58d785b.vercel.app/')
 
     // Step 1 : Upload a picture
     cy.get("input[type='file']").should('exist')
