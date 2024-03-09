@@ -1,8 +1,8 @@
-import { Slider } from "../../../../../../shared/components/ui/slider";
-import { useSettingsStore } from "../../../../stores/settings-store";
+import { Slider } from '../../../../../../shared/components/ui/slider'
+import { useSettingsStore } from '../../../../stores/settings-store'
 
 export default function RoundnessOption() {
-  const { roundness, setRoundness } = useSettingsStore();
+  const { roundness, setRoundness } = useSettingsStore()
   return (
     <div id="roundness-option" className="grid gap-1.5 w-full">
       <span className="text-sm font-medium text-gray-800">Roundness</span>
@@ -21,5 +21,5 @@ export default function RoundnessOption() {
         {roundness}px
       </small>
     </div>
-  );
+  )
 }

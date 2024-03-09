@@ -1,17 +1,17 @@
 import {
   ThemeEnum,
   useSettingsStore,
-} from "../../../../../features/editor/stores/settings-store";
+} from '../../../../../features/editor/stores/settings-store'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../../../../../shared/components/ui/select";
+} from '../../../../../shared/components/ui/select'
 
 export default function ThemeOptions() {
-  const { theme, setTheme } = useSettingsStore();
+  const { theme, setTheme } = useSettingsStore()
   return (
     <div className="grid gap-1.5 w-full">
       <Select value={theme} onValueChange={setTheme}>
@@ -44,5 +44,5 @@ export default function ThemeOptions() {
         </SelectContent>
       </Select>
     </div>
-  );
+  )
 }

@@ -1,11 +1,11 @@
-import { cn } from "../../../lib/utils";
+import { cn } from '../../../lib/utils'
 import {
   useRef,
   useState,
   type ChangeEvent,
   type DragEvent,
   BaseHTMLAttributes,
-} from "react";
+} from 'react'
 
 const defaultText = (
   <div className="text-sm flex flex-col group items-center">
@@ -14,16 +14,16 @@ const defaultText = (
       browse your computer
     </span>
   </div>
-);
+)
 
 type FileUploadProps = {
-  onUpload?: (_files: File[]) => void;
-  accept: string[];
-  error?: string;
-  className?: string;
-  multiple?: boolean;
-  text?: React.ReactElement | string;
-} & BaseHTMLAttributes<HTMLDivElement>;
+  onUpload?: (_files: File[]) => void
+  accept: string[]
+  error?: string
+  className?: string
+  multiple?: boolean
+  text?: React.ReactElement | string
+} & BaseHTMLAttributes<HTMLDivElement>
 
 export default function FileUpload({
   onUpload,
@@ -34,49 +34,49 @@ export default function FileUpload({
   multiple = false,
   ...props
 }: FileUploadProps) {
-  const [isUploadError, setUploadError] = useState(false);
+  const [isUploadError, setUploadError] = useState(false)
 
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null)
 
   const onFileUpload = (e: ChangeEvent<HTMLInputElement>) => {
-    const fileList = e.target.files;
+    const fileList = e.target.files
 
-    if (!fileList) return;
+    if (!fileList) return
 
-    onUpload?.(Array.from(fileList));
-  };
+    onUpload?.(Array.from(fileList))
+  }
 
   const onFileDrop = (e: DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    setUploadError(false);
-    const files: File[] = [];
+    setUploadError(false)
+    const files: File[] = []
 
     if (!e.dataTransfer.items) {
       for (let i = 0; i < e.dataTransfer.files.length; i++) {
         if (accept.indexOf(e.dataTransfer.files[i].type) > -1) {
-          files.push(e.dataTransfer.files[i]);
+          files.push(e.dataTransfer.files[i])
         }
       }
-      return;
+      return
     }
 
     for (let i = 0; i < e.dataTransfer.items.length; i++) {
-      if (e.dataTransfer.items[i].kind === "file") {
-        const file = e.dataTransfer.items[i].getAsFile();
+      if (e.dataTransfer.items[i].kind === 'file') {
+        const file = e.dataTransfer.items[i].getAsFile()
         if (file && accept.indexOf(file.type) > -1) {
-          files.push(file);
+          files.push(file)
         }
       }
     }
 
     if (!files.length) {
-      setUploadError(true);
-      return;
+      setUploadError(true)
+      return
     }
 
-    onUpload?.(files);
-  };
+    onUpload?.(files)
+  }
 
   return (
     <div
@@ -84,8 +84,8 @@ export default function FileUpload({
       onDrop={onFileDrop}
       onDragOver={(e) => e.preventDefault()}
       className={cn(
-        "flex select-none cursor-pointer items-center justify-center w-full",
-        className
+        'flex select-none cursor-pointer items-center justify-center w-full',
+        className,
       )}
       {...props}
     >
@@ -93,18 +93,18 @@ export default function FileUpload({
 
       {isUploadError && (
         <small className="text-rose-600">
-          {error || "Invalid file type. Please upload a valid file type."}
+          {error || 'Invalid file type. Please upload a valid file type.'}
         </small>
       )}
 
       <input
         ref={inputRef}
-        accept={accept.join(", ")}
+        accept={accept.join(', ')}
         multiple={multiple}
         type="file"
         onChange={onFileUpload}
         className="hidden"
       />
     </div>
-  );
+  )
 }

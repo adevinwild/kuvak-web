@@ -1,4 +1,4 @@
-import { XIcon } from "lucide-react";
+import { XIcon } from 'lucide-react'
 
 export default function ErrorOverlay() {
   return (
@@ -12,5 +12,5 @@ export default function ErrorOverlay() {
         An error occurred while exporting the image, please try again.
       </p>
     </div>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-import { Slider } from "../../../../../../shared/components/ui/slider";
-import { useSettingsStore } from "../../../../stores/settings-store";
+import { Slider } from '../../../../../../shared/components/ui/slider'
+import { useSettingsStore } from '../../../../stores/settings-store'
 
 export default function ScaleOption() {
-  const { scale, setScale } = useSettingsStore();
+  const { scale, setScale } = useSettingsStore()
   return (
     <div id="scale-option" className="grid gap-1.5 w-full">
       <span className="text-sm font-medium text-gray-800">Scale</span>
@@ -21,5 +21,5 @@ export default function ScaleOption() {
         x{scale.toFixed(1)}
       </small>
     </div>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import { CheckIcon } from "lucide-react";
+import { CheckIcon } from 'lucide-react'
 
 export default function SuccessOverlay() {
   return (
@@ -9,5 +9,5 @@ export default function SuccessOverlay() {
     >
       <CheckIcon className="text-emerald-400 size-12" />
     </div>
-  );
+  )
 }

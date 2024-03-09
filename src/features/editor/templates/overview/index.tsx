@@ -1,5 +1,5 @@
-import ScreenshotPreview from "../../components/preview";
-import Toolbar from "../../components/toolbar";
+import ScreenshotPreview from '../../components/preview'
+import Toolbar from '../../components/toolbar'
 
 export default function EditorOverview() {
   return (
@@ -7,5 +7,5 @@ export default function EditorOverview() {
       <Toolbar />
       <ScreenshotPreview />
     </div>
-  );
+  )
 }

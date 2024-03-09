@@ -1,6 +1,6 @@
 @font-face {
   font-family: _default_logo;
-  src: url("/fonts/_default_logo.otf") format("opentype");
+  src: url('/fonts/_default_logo.otf') format('opentype');
 }
 
 @tailwind base;

@@ -1,32 +1,32 @@
-import { Button } from "../../../../shared/components/ui/button";
-import { CommandIcon } from "lucide-react";
-import { createPortal } from "react-dom";
-import { useHotkeys } from "react-hotkeys-hook";
-import { useExportStore } from "../../stores/export-store";
-import ErrorOverlay from "./error-overlay";
-import ImagePropertiesOptions from "./image-properties";
-import LoadingOverlay from "./loading-overlay";
-import SuccessOverlay from "./success-overlay";
-import ThemeOptions from "./theme-options";
-import useDetectDevice from "./use-detect-device";
-import useExportNode from "./use-export-node";
+import { Button } from '../../../../shared/components/ui/button'
+import { CommandIcon } from 'lucide-react'
+import { createPortal } from 'react-dom'
+import { useHotkeys } from 'react-hotkeys-hook'
+import { useExportStore } from '../../stores/export-store'
+import ErrorOverlay from './error-overlay'
+import ImagePropertiesOptions from './image-properties'
+import LoadingOverlay from './loading-overlay'
+import SuccessOverlay from './success-overlay'
+import ThemeOptions from './theme-options'
+import useDetectDevice from './use-detect-device'
+import useExportNode from './use-export-node'
 
 export default function Toolbar() {
-  const { containerToExportRef } = useExportStore();
-  const { onExport, status } = useExportNode(containerToExportRef);
+  const { containerToExportRef } = useExportStore()
+  const { onExport, status } = useExportNode(containerToExportRef)
 
-  const device = useDetectDevice();
-  const hotkeys = device === "mac" ? "meta+e" : "ctrl+e";
+  const device = useDetectDevice()
+  const hotkeys = device === 'mac' ? 'meta+e' : 'ctrl+e'
   useHotkeys(hotkeys, () => {
-    if (status === "success" || status === "loading") return;
-    onExport();
-  });
+    if (status === 'success' || status === 'loading') return
+    onExport()
+  })
 
   return (
     <>
-      {status === "loading" && createPortal(<LoadingOverlay />, document.body)}
-      {status === "error" && createPortal(<ErrorOverlay />, document.body)}
-      {status === "success" && createPortal(<SuccessOverlay />, document.body)}
+      {status === 'loading' && createPortal(<LoadingOverlay />, document.body)}
+      {status === 'error' && createPortal(<ErrorOverlay />, document.body)}
+      {status === 'success' && createPortal(<SuccessOverlay />, document.body)}
 
       <div
         data-testid="toolbar"
@@ -45,7 +45,7 @@ export default function Toolbar() {
         >
           <span>Export</span>
           <div className="flex items-center ml-2 tracking-tighter">
-            {device === "mac" ? (
+            {device === 'mac' ? (
               <CommandIcon className="size-4" />
             ) : (
               <span>CTRL</span>
@@ -55,5 +55,5 @@ export default function Toolbar() {
         </Button>
       </div>
     </>
-  );
+  )
 }

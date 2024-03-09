@@ -1,6 +1,6 @@
-import PaddingOption from "./padding-option";
-import RoundnessOption from "./roundness-option";
-import ScaleOption from "./scale-option";
+import PaddingOption from './padding-option'
+import RoundnessOption from './roundness-option'
+import ScaleOption from './scale-option'
 
 export default function ImagePropertiesOptions() {
   return (
@@ -9,5 +9,5 @@ export default function ImagePropertiesOptions() {
       <PaddingOption />
       <RoundnessOption />
     </>
-  );
+  )
 }
