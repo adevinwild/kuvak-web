@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar Toolbar - should render without issues 1`] = `
+<DocumentFragment>
+  <div
+    class="z-10 rounded-lg shadow-border h-24 p-4 gap-4 flex items-center justify-between right-0 top-0 bg-white dark:bg-gray-900"
+    data-testid="toolbar"
+  >
+    <div
+      class="grid gap-1.5 w-full"
+    >
+      <button
+        aria-autocomplete="none"
+        aria-controls="radix-:r0:"
+        aria-expanded="false"
+        class="flex h-10 items-center justify-between rounded-md border border-gray-200 bg-white px-3 py-2 text-sm ring-offset-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-950 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 dark:border-gray-800 dark:bg-gray-950 dark:ring-offset-gray-950 dark:placeholder:text-gray-400 dark:focus:ring-gray-300 w-24"
+        data-state="closed"
+        data-testid="theme-options"
+        dir="ltr"
+        role="combobox"
+        type="button"
+      >
+        <span
+          style="pointer-events: none;"
+        >
+          Light
+        </span>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m6 9 6 6 6-6"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="grid gap-1.5 w-full"
+    >
+      <span
+        class="text-sm font-medium text-gray-800"
+      >
+        Scale
+      </span>
+      <div
+        class="h-6 flex items-center justify-center"
+      >
+        <span
+          aria-disabled="false"
+          class="relative flex w-full touch-none select-none items-center min-w-20"
+          data-orientation="horizontal"
+          data-testid="scale-option"
+          dir="ltr"
+          style="--radix-slider-thumb-transform: translateX(-50%);"
+        >
+          <span
+            class="relative h-2 w-full grow overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800"
+            data-orientation="horizontal"
+          >
+            <span
+              class="absolute h-full bg-emerald-500   dark:bg-gray-50"
+              data-orientation="horizontal"
+              style="left: 0%; right: 78.94736842105263%;"
+            />
+          </span>
+          <span
+            style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(21.05263157894737% + 0px);"
+          >
+            <span
+              aria-orientation="horizontal"
+              aria-valuemax="4"
+              aria-valuemin="0.2"
+              aria-valuenow="1"
+              class="block h-5 w-5 rounded-full border-2 border-emerald-400 bg-white ring-offset-white transition-colors focus-visible:outline-none  disabled:pointer-events-none disabled:opacity-50 dark:border-gray-50 dark:bg-emerald-950 dark:ring-offset-emerald-950 dark:focus-visible:ring-gray-300"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              role="slider"
+              style=""
+              tabindex="0"
+            />
+          </span>
+        </span>
+      </div>
+      <small
+        class="text-xs text-gray-500 font-light"
+        role="status"
+      >
+        x1.0
+      </small>
+    </div>
+    <div
+      class="grid gap-1.5 w-full"
+    >
+      <span
+        class="text-sm font-medium text-gray-800"
+      >
+        Padding
+      </span>
+      <div
+        class="h-6 flex items-center justify-center"
+      >
+        <span
+          aria-disabled="false"
+          class="relative flex w-full touch-none select-none items-center min-w-20"
+          data-orientation="horizontal"
+          data-testid="padding-option"
+          dir="ltr"
+          style="--radix-slider-thumb-transform: translateX(-50%);"
+        >
+          <span
+            class="relative h-2 w-full grow overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800"
+            data-orientation="horizontal"
+          >
+            <span
+              class="absolute h-full bg-emerald-500   dark:bg-gray-50"
+              data-orientation="horizontal"
+              style="left: 0%; right: 91.66666666666667%;"
+            />
+          </span>
+          <span
+            style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(8.333333333333334% + 0px);"
+          >
+            <span
+              aria-orientation="horizontal"
+              aria-valuemax="96"
+              aria-valuemin="0"
+              aria-valuenow="8"
+              class="block h-5 w-5 rounded-full border-2 border-emerald-400 bg-white ring-offset-white transition-colors focus-visible:outline-none  disabled:pointer-events-none disabled:opacity-50 dark:border-gray-50 dark:bg-emerald-950 dark:ring-offset-emerald-950 dark:focus-visible:ring-gray-300"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              role="slider"
+              style=""
+              tabindex="0"
+            />
+          </span>
+        </span>
+      </div>
+      <small
+        class="text-xs text-gray-500 font-light"
+        role="status"
+      >
+        8px
+      </small>
+    </div>
+    <div
+      class="grid gap-1.5 w-full"
+    >
+      <span
+        class="text-sm font-medium text-gray-800"
+      >
+        Roundness
+      </span>
+      <div
+        class="h-6 flex items-center justify-center"
+      >
+        <span
+          aria-disabled="false"
+          class="relative flex w-full touch-none select-none items-center min-w-20"
+          data-orientation="horizontal"
+          data-testid="roundness-option"
+          dir="ltr"
+          style="--radix-slider-thumb-transform: translateX(-50%);"
+        >
+          <span
+            class="relative h-2 w-full grow overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800"
+            data-orientation="horizontal"
+          >
+            <span
+              class="absolute h-full bg-emerald-500   dark:bg-gray-50"
+              data-orientation="horizontal"
+              style="left: 0%; right: 92%;"
+            />
+          </span>
+          <span
+            style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(8% + 0px);"
+          >
+            <span
+              aria-orientation="horizontal"
+              aria-valuemax="100"
+              aria-valuemin="0"
+              aria-valuenow="8"
+              class="block h-5 w-5 rounded-full border-2 border-emerald-400 bg-white ring-offset-white transition-colors focus-visible:outline-none  disabled:pointer-events-none disabled:opacity-50 dark:border-gray-50 dark:bg-emerald-950 dark:ring-offset-emerald-950 dark:focus-visible:ring-gray-300"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              role="slider"
+              style=""
+              tabindex="0"
+            />
+          </span>
+        </span>
+      </div>
+      <small
+        class="text-xs text-gray-500 font-light"
+        role="status"
+      >
+        8px
+      </small>
+    </div>
+    <div
+      class="w-px h-10 bg-gray-200"
+    />
+    <button
+      class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-gray-950 dark:focus-visible:ring-gray-300 text-gray-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 h-9 rounded-md px-3 bg-emerald-400 hover:bg-emerald-500"
+      data-testid="export-button"
+    >
+      <span>
+        Export
+      </span>
+      <div
+        class="flex items-center ml-2 tracking-tighter"
+      >
+        <span>
+          CTRL
+        </span>
+        <span>
+          + E
+        </span>
+      </div>
+    </button>
+  </div>
+</DocumentFragment>
+`;
