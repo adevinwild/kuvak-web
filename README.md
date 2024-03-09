@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+<div align="center">
+  <img src="./.r/readme-logo.png" width="256" />
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">
+  KUVAK
+</h1>
+<p align="center">
+  KUVAK is tiny open-source screenshot maker
+</p>
+<p align="center">
+  <a href="https://github.com/adevinwild/kuvak-web/actions/workflows/unit-tests.yml">
+    <img src="https://github.com/adevinwild/kuvak-web/actions/workflows/unit-tests.yml/badge.svg" alt="Current unit tests build status" />
+  </a>
+   <a href="https://github.com/adevinwild/kuvak-web/actions/workflows/e2e.yml">
+    <img src="https://github.com/adevinwild/kuvak-web/actions/workflows/e2e.yml/badge.svg" alt="Current unit tests build status" />
+  </a>
+</p>
 
-Currently, two official plugins are available:
+<h2>
+  What is the purpose of KUVAK?
+</h2>
+<p>
+KUVAK is designed to demonstrate various aspects of a project, from feature development to testing.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>
+  How to use KUVAK?
+  </h2>
+<p>
+  Upload an image and start tweaking the settings to see the changes in real-time, when you are satisfied with the result, you can download the image by clicking on the <kbd>Export</kbd> button
+</p>
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<h2>
+License
+</h2>
+<p>
+  KUVAK is licensed under the MIT License, see the <a href="./LICENSE.md">LICENSE.md</a> file for more information.
+</p>
