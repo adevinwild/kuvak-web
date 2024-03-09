@@ -1,3 +1,4 @@
+import "@testing-library/jest-dom";
 import { screen, render } from "@testing-library/react";
 import { useUploadStore } from "../features/editor/stores/upload-store";
 import App from "../App";
