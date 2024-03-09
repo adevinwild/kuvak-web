@@ -1,4 +1,4 @@
-import { renderHook } from "@testing-library/react-hooks";
+import { renderHook } from "@testing-library/react";
 
 import { useSettingsStore } from "../../../stores/settings-store";
 import { useUploadStore } from "../../../stores/upload-store";
