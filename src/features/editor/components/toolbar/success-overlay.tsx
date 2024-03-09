@@ -1,5 +1,4 @@
 import { CheckIcon } from "lucide-react";
-import React, { useEffect } from "react";
 
 export default function SuccessOverlay() {
   return (
