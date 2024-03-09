@@ -31,7 +31,7 @@ export default function Toolbar() {
       <div
         data-testid="toolbar"
         id="toolbar"
-        className="z-10 rounded-lg shadow-border h-24 p-4 gap-4 flex items-center justify-between right-0 top-0 bg-white dark:bg-gray-900"
+        className="z-10  rounded-lg ring-1 ring-gray-200 h-24 p-4 gap-4 flex items-center justify-between right-0 top-0 bg-white dark:bg-gray-900"
       >
         <ThemeOptions />
         <ImagePropertiesOptions />

@@ -30,7 +30,7 @@ export default function useExportNode(ref: RefObject<HTMLDivElement> | null) {
 
   useEffect(
     function resetStatusOnEnd() {
-      if (status === 'loading') return
+      if (status !== 'success' && status !== 'error') return
 
       const timer = setTimeout(() => {
         setStatus('idle')
